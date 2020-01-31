@@ -46,3 +46,24 @@ You can also assign the dataset to any variable you create.
 ### Why binning?
 
 Binning is a process of transforming continuous numerical variables into discrete categorical 'bins', for grouped analysis.
+
+
+* DRAW IN THE HISTOGRAM TO HORSEPOWER
+```
+%matplotlib inline
+import matplotlib as plt
+from matplotlib import pyplot
+plt.pyplot.hist(df["horsepower"])
+
+# set x/y labels and plot title
+plt.pyplot.xlabel("horsepower")
+plt.pyplot.ylabel("count")
+plt.pyplot.title("horsepower bins")
+```
+
+* 
+```
+bins = np.linspace(min(df["horsepower"]), max(df["horsepower"]), 4)
+bins
+```
+
