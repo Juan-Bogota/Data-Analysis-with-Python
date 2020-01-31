@@ -39,3 +39,10 @@ You can also assign the dataset to any variable you create.
 * ```df[`"city-mpg"] = 235/df["city-mpg"]``` => update the column with a new value
 * ```df.rename(columns={'highway-mpg':'highway-L/100km'}, inplace=True)``` => rename the column
 * ```df['height'] = df['height']/ df['height'].max()``` Normalization originalValue/maxValue
+
+
+## BINNING
+
+### Why binning?
+
+Binning is a process of transforming continuous numerical variables into discrete categorical 'bins', for grouped analysis.
